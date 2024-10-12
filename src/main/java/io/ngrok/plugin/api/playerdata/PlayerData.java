@@ -1,6 +1,5 @@
 package io.ngrok.plugin.api.playerdata;
 
-import io.ngrok.plugin.api.kit.Kit;
 import lombok.Getter;
 
 import java.util.List;
@@ -14,9 +13,9 @@ public class PlayerData {
     int deaths;
     int current_streak;
     int highest_streak;
-    List<Kit> kits;
+    List<Integer> kits;
 
-    public PlayerData(UUID uuid, int coins, int kills, int deaths, int current_streak, int highest_streak, List<Kit> kits) {
+    public PlayerData(UUID uuid, int coins, int kills, int deaths, int current_streak, int highest_streak, List<Integer> kits) {
         this.uuid = uuid;
         this.coins = coins;
         this.kills = kills;
